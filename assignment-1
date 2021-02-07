@@ -1,0 +1,551 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyN3DabLGNGjJsCHANkl/o3O",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/afreen25/assignment/blob/main/assignment-1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-KNIEubHmGKJ",
+        "outputId": "c92df9ab-4d8b-4ca1-fca2-e15581774d21"
+      },
+      "source": [
+        "print(\"hi\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "hi\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kojBWD0AmL8f",
+        "outputId": "a2023723-64a5-42e2-b1c9-0b6bb52e485c"
+      },
+      "source": [
+        "lst=[1,2,3,4,5,78]\r\n",
+        "lst[0]"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "1"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ZEV-Y9e4malw"
+      },
+      "source": [
+        "lst.append(23.5)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AN8Q1RG0mhfB",
+        "outputId": "832bdbda-56f7-4367-c81d-1258b81c9ac2"
+      },
+      "source": [
+        "lst"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 2, 3, 4, 5, 78, 23.5]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OEK5eks8mlW_",
+        "outputId": "21a77aa2-8e4d-4e6b-dde0-a87dff9e5373"
+      },
+      "source": [
+        "lst.insert(3,\"hello\")\r\n",
+        "lst"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 2, 3, 'hello', 4, 5, 78, 23.5]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Zau_xXXzm1Fa",
+        "outputId": "58b79ec8-b79c-4d32-bd73-ea5bb1ad431e"
+      },
+      "source": [
+        "\r\n",
+        "\r\n",
+        "\r\n",
+        "lst"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 2, 3, 'hello', 4, 5, 78, 23.5]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lbyT36mRm74v",
+        "outputId": "e95570d7-3008-4671-ac5d-ec7777215e41"
+      },
+      "source": [
+        "lst.pop(5)\r\n",
+        "lst\r\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 2, 3, 'hello', 4, 78, 23.5]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AItfExsTnSgy",
+        "outputId": "b6d91f05-525d-415b-df8a-f28fe8473c9d"
+      },
+      "source": [
+        "lst=[4,46,5,54,4,78,4]\r\n",
+        "lst.count(4)\r\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 9
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TmRbj8XpnGqq",
+        "outputId": "6747b1ed-a133-4d57-cb7e-3fc1011db7ca"
+      },
+      "source": [
+        "lst.count(2)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "1"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "LiyVEHyCriqM"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "8XjyNcGSrsQP"
+      },
+      "source": [
+        "ASSIGNMENT -2"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "vWCzDpV2r1XM"
+      },
+      "source": [
+        "Dictionaries inbuilt functions"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bERu59vcsh32",
+        "outputId": "cbe576b8-77ca-4051-a799-edb5ec9e3873"
+      },
+      "source": [
+        "dict={\"name\":\"afreen\",\"age\":18,\"loc\":\"delhi\"}\r\n",
+        "dict"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'age': 18, 'loc': 'delhi', 'name': 'afreen'}"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KmzxwygQtDVO"
+      },
+      "source": [
+        "1.keys"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WBad4yWotaEx",
+        "outputId": "2cfb8c45-b168-40e7-a979-c896c474c39b"
+      },
+      "source": [
+        "dict.keys()"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict_keys(['name', 'age', 'loc'])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 13
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "gqXt44YethGM"
+      },
+      "source": [
+        "2.values"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mzTIQ1TCtt8W",
+        "outputId": "ad7592a2-8fd9-43bb-d498-6c229ab36d15"
+      },
+      "source": [
+        "dict.values()\r\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict_values(['afreen', 18, 'delhi'])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 14
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "GPT0mtqrt42V"
+      },
+      "source": [
+        "3.pop item"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vXzqiMamuAmN",
+        "outputId": "56b3855e-82d9-4feb-e36a-764e781e19ac"
+      },
+      "source": [
+        "dict.popitem()"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "('loc', 'delhi')"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "4b1bZmYWuSuT"
+      },
+      "source": [
+        "4.set default"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "z6kMFjhnuYhA"
+      },
+      "source": [
+        ""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "MjxDaUMPuckt"
+      },
+      "source": [
+        "dict.setdefault(\"loc\")"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vwwPfzveulaa",
+        "outputId": "bb14aefb-62a3-48d1-8720-fba03463f7e0"
+      },
+      "source": [
+        "dict"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'age': 18, 'loc': None, 'name': 'afreen'}"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "QdB1A7IKuoOG"
+      },
+      "source": [
+        "   "
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "059pjcP0xQa1"
+      },
+      "source": [
+        "5.clear"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0goNsS4GxeW0",
+        "outputId": "1b397e80-43e5-4716-ce89-c73da52dc5ee"
+      },
+      "source": [
+        "dict.clear()\r\n",
+        "dict"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{}"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xhok9gUrxltO"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
